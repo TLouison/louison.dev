@@ -22,7 +22,7 @@ html {
 
     display: flex;
     flex-direction: column;
-    flex-grow: 0;
+    align-items: center;
 }
 
 .button {
@@ -35,6 +35,7 @@ html {
     box-shadow: rgba(149, 157, 165, 0.1) 2px 2px 12px;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button:hover {
