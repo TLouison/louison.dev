@@ -72,7 +72,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/python-logo.svg"
+									src="/assets/python-logo.svg"
 									width="150"
 									height="150"
 								/>
@@ -82,7 +82,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/js-logo.svg"
+									src="/assets/js-logo.svg"
 									width="150"
 									height="150"
 								/>
@@ -92,7 +92,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/django-logo.svg"
+									src="/assets/django-logo.svg"
 									width="150"
 									height="150"
 									style="background: white; scale: 90%"
@@ -103,7 +103,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/vue-logo.svg"
+									src="/assets/vue-logo.svg"
 									width="150"
 									height="150"
 								/>
@@ -113,7 +113,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/AWS-logo.svg"
+									src="/assets/aws-logo.svg"
 									width="150"
 									height="150"
 								/>
@@ -123,7 +123,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/storybook-logo.svg"
+									src="/assets/storybook-logo.svg"
 									width="150"
 									height="150"
 								/>
@@ -138,7 +138,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/rust-logo.svg"
+									src="/assets/rust-logo.svg"
 									width="150"
 									height="150"
 									style="background: white"
@@ -149,7 +149,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/swift-logo.svg"
+									src="/assets/swift-logo.svg"
 									width="150"
 									height="150"
 								/>
@@ -159,7 +159,7 @@
 						<ul>
 							<div>
 								<img
-									src="../assets/firebase-logo.svg"
+									src="/assets/firebase-logo.svg"
 									width="150"
 									height="150"
 								/>
@@ -181,27 +181,27 @@
 				<div class="glide__track" data-glide-el="track">
 					<ul class="glide__slides">
 						<li class="glide__slide rect">
-							<img src="../assets/3dPrinting.jpg" />
+							<img src="/assets/3dPrinting.jpg" />
 							3D Printing
 						</li>
 						<li class="glide__slide rect">
-							<img src="../assets/photography.jpg" />
+							<img src="/assets/photography.jpg" />
 							Photography
 						</li>
 						<li class="glide__slide rect">
-							<img src="../assets/guitar.jpg" />
+							<img src="/assets/guitar.jpg" />
 							Guitar
 						</li>
 						<li class="glide__slide rect">
-							<img src="../assets/cooking.jpg" />
+							<img src="/assets/cooking.jpg" />
 							Cooking
 						</li>
 						<li class="glide__slide rect">
-							<img src="../assets/coffee.jpg" />
+							<img src="/assets/coffee.jpg" />
 							Coffee
 						</li>
 						<li class="glide__slide rect">
-							<img src="../assets/alliance.jpg" />
+							<img src="/assets/alliance.jpg" />
 							Video Games
 						</li>
 					</ul>
