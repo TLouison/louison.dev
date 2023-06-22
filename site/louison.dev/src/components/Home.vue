@@ -65,113 +65,116 @@
 				I'm a
 				<span class="fancy-text">Full-Stack</span> software engineer
 			</h2>
-			<div class="technical-info">
-				<div class="professional">
-					<h3>I've used these technologies professionally</h3>
-					<li class="block-list">
-						<ul>
-							<div>
-								<img
-									src="/assets/python-logo.svg"
-									width="150"
-									height="150"
-								/>
-								Python
-							</div>
-						</ul>
-						<ul>
-							<div>
-								<img
-									src="/assets/js-logo.svg"
-									width="150"
-									height="150"
-								/>
-								Javascript
-							</div>
-						</ul>
-						<ul>
-							<div>
-								<img
-									src="/assets/django-logo.svg"
-									width="150"
-									height="150"
-									style="background: white; scale: 90%"
-								/>
-								Django
-							</div>
-						</ul>
-						<ul>
-							<div>
-								<img
-									src="/assets/vue-logo.svg"
-									width="150"
-									height="150"
-								/>
-								Vue.js
-							</div>
-						</ul>
-						<ul>
-							<div>
-								<img
-									src="/assets/aws-logo.svg"
-									width="150"
-									height="150"
-								/>
-								AWS
-							</div>
-						</ul>
-						<ul>
-							<div>
-								<img
-									src="/assets/storybook-logo.svg"
-									width="150"
-									height="150"
-								/>
-								Storybook
-							</div>
-						</ul>
-					</li>
-				</div>
-				<div class="personal">
-					<h3>I've also used these in personal projects</h3>
-					<li class="block-list">
-						<ul>
-							<div>
-								<img
-									src="/assets/rust-logo.svg"
-									width="150"
-									height="150"
-									style="background: white"
-								/>
-								Rust
-							</div>
-						</ul>
-						<ul>
-							<div>
-								<img
-									src="/assets/swift-logo.svg"
-									width="150"
-									height="150"
-								/>
-								Swift
-							</div>
-						</ul>
-						<ul>
-							<div>
-								<img
-									src="/assets/firebase-logo.svg"
-									width="150"
-									height="150"
-								/>
-								Firebase
-							</div>
-						</ul>
-					</li>
+			<div class="">
+				<div class="technical-info">
+					<div class="professional">
+						<h3>I've used these technologies professionally</h3>
+						<li class="block-list">
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/python-logo.svg"
+										width="150"
+										height="150"
+									/>
+									<span class="language">Python</span>
+								</div>
+							</ul>
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/js-logo.svg"
+										width="150"
+										height="150"
+									/>
+									<span class="language">Javascript</span>
+								</div>
+							</ul>
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/django-logo.svg"
+										width="150"
+										height="150"
+										style="background: white"
+									/>
+									<span class="language">Django</span>
+								</div>
+							</ul>
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/vue-logo.svg"
+										width="150"
+										height="150"
+									/>
+									<span class="language">Vue.js</span>
+								</div>
+							</ul>
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/aws-logo.svg"
+										width="150"
+										height="150"
+										style="filter: none"
+									/>
+									<span class="language">AWS</span>
+								</div>
+							</ul>
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/storybook-logo.svg"
+										width="150"
+										height="150"
+									/>
+									<span class="language">Storybook</span>
+								</div>
+							</ul>
+						</li>
+					</div>
+					<div class="personal">
+						<h3>I've also used these in personal projects</h3>
+						<li class="block-list">
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/rust-logo.svg"
+										width="150"
+										height="150"
+										style="background: white"
+									/>
+									<span class="language">Rust</span>
+								</div>
+							</ul>
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/swift-logo.svg"
+										width="150"
+										height="150"
+									/>
+									<span class="language">Swift</span>
+								</div>
+							</ul>
+							<ul>
+								<div class="language-block">
+									<img
+										src="/assets/firebase-logo.svg"
+										width="150"
+										height="150"
+									/>
+									<span class="language">Firebase</span>
+								</div>
+							</ul>
+						</li>
+					</div>
 				</div>
 			</div>
 		</section>
 		<div class="skew-divider"></div>
-		<section>
+		<section class="hobbies">
 			<h2>
 				But, I'm <span class="fancy-text">more</span> than just an
 				engineer
@@ -222,16 +225,30 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact">
-			<h1><span class="fancy-text">Contact me</span></h1>
-			<a
-				href="https://github.com/TLouison/"
-				target="_blank"
-				class="button"
-			>
-				<span>GitHub</span>
-			</a>
-		</section>
+		<!-- <div class="skew-divider shift-down"></div> -->
+		<footer class="contact">
+			<h1>Contact me</h1>
+			<div class="social-links">
+				<a href="https://github.com/TLouison/" target="_blank">
+					<button class="button">
+						<font-awesome-icon icon="fa-brands fa-github" />
+					</button>
+				</a>
+				<a href="https://twitter.com/TMLouison" target="_blank">
+					<button class="button twitter">
+						<font-awesome-icon icon="fa-brands fa-twitter" />
+					</button>
+				</a>
+				<a href="mailto:toddmlouison@gmail.com">
+					<button class="button email">
+						<font-awesome-icon
+							icon="fa-regular fa-envelope"
+							style="color: black"
+						/>
+					</button>
+				</a>
+			</div>
+		</footer>
 	</main>
 </template>
 
