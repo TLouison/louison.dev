@@ -21,4 +21,4 @@ jobs:
       # The branches to merge, one per line. The branches at the top will be merged into lower branches
       branches: 
         - main
-        -site
+        - site
