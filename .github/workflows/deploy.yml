@@ -1,0 +1,21 @@
+name: Deploy to Netlify
+
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts
+
+jobs:
+  merge_main_to_site:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Merge main -> site
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: main
+          target_branch: site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
