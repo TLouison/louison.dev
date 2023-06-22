@@ -1,0 +1,24 @@
+# This is a basic workflow that is manually triggered
+
+name: Manual workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  deploy:
+    name: Cascading Merge
+    # You may pin to the exact commit or the version.
+    # uses: mheap/cascading-merge-action@f698ed7bfb8db048ba5d28b864fce2a61372bffb
+    uses: mheap/cascading-merge-action@v1.0.0
+    with:
+      # The GITHUB_TOKEN to use
+      token: ${{ github.token }}
+      # The branches to merge, one per line. The branches at the top will be merged into lower branches
+      branches: 
+        - main
+        -site
