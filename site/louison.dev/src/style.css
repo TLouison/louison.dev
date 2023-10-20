@@ -23,7 +23,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-section h2, h3 {
+/* section h2, h3 {
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ section:not(.hero) {
     margin-block: 5em;
     padding: 2em;
 }
-
+*/
 .fancy-text {
     background: -webkit-linear-gradient(left, #3bb2e2, #028a0f);
     background-clip: text;
@@ -56,8 +56,12 @@ section:not(.hero) {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background: #121212;
+background: linear-gradient(270deg, rgba(2,0,36,0.2) 0%, rgba(9,121,28,0.15) 35%, rgba(0,212,255,0.1) 100%);
 }
 
+
+/*
 .hero-text {
     animation: fade-in-horizontal 1s 0.5s forwards;
     color: var(--text);
@@ -318,7 +322,7 @@ section:not(.hero) {
 
 .button:hover {
     transform: scale(1.2);
-}
+} */
 
 .contact {
     min-height: 4em;
@@ -333,4 +337,74 @@ section:not(.hero) {
     display: flex;
     justify-content: center;
     gap: 1em;
+}
+
+.hero-container {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.profile-image {
+    transition: .25s ease-in-out;
+}
+
+.profile-image > img {
+    border-radius: 48px;
+}
+
+.profile-image:hover {
+    scale: 1.1;
+}
+
+.callout-container {
+    display: flex;
+    flex-direction: column;
+    justify-items:start;
+}
+
+.callout-header {
+    font-size: 4em;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.callout-container > a > button {
+    width: 100%;
+    font-size: 1em;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+    border: 0px solid cadetblue;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: .1s ease-in-out;
+}
+
+.callout-container > a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.callout-container > a > button > svg {
+    height: 2em;
+}
+
+.callout-container > a > button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.github-button {
+    background-color: #333;
+}
+
+.linkedin-button {
+    background-color: #0077B5;
+}
+
+.email-button {
+    color: #121212;
+    background-color: #e4f0e7;
 }

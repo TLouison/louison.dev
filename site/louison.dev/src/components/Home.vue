@@ -1,8 +1,52 @@
 <template>
 	<main>
 		<section class="hero">
+			<div class="hero-container">
+				<div class="profile-image">
+					<img src="/assets/todd-portrait-2.jpeg" />
+				</div>
+				<div class="callout-container">
+					<h1 class="callout-header">
+						Hi, I'm <span class="fancy-text">Todd</span>!
+					</h1>
+					<a href="https://github.com/TLouison/" target="_blank">
+						<button class="callout-button github-button">
+							<font-awesome-icon icon="fa-brands fa-github" />
+							Check out my GitHub
+						</button>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/todd-louison/"
+						target="_blank"
+					>
+						<button class="callout-button linkedin-button">
+							<font-awesome-icon
+								icon="fa-brands fa-linkedin-in"
+							/>
+							Find me on LinkedIn
+						</button>
+					</a>
+					<a href="mailto:toddmlouison@gmail.com" target="_blank">
+						<button class="callout-button email-button">
+							<font-awesome-icon
+								icon="fa-regular fa-envelope"
+								style="color: black"
+							/>
+							Send me an email
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="background">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</section>
+		<!-- <section class="hero">
 			<div class="hero-text">
-				<h1>Hi! I'm <span class="fancy-text">Todd</span>.</h1>
+				<h1>Hi, I'm <span class="fancy-text">Todd</span>!</h1>
 			</div>
 			<div class="scroll-indicator-container">
 				<div class="scroll-indicator">
@@ -23,7 +67,7 @@
 						/>
 						<rect
 							x="35.5347"
-							y="42.9612"
+							y="42.9612"`
 							width="50"
 							height="10"
 							transform="rotate(-135 35.5347 42.9612)"
@@ -224,9 +268,9 @@
 					</button>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- <div class="skew-divider shift-down"></div> -->
-		<footer class="contact">
+		<!-- <footer class="contact">
 			<h1>Contact me</h1>
 			<div class="social-links">
 				<a href="https://github.com/TLouison/" target="_blank">
@@ -248,7 +292,7 @@
 					</button>
 				</a>
 			</div>
-		</footer>
+		</footer> -->
 	</main>
 </template>
 
