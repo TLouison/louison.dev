@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html {
+    color: aliceblue;
+    background-color: #2e2e2e;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(46, 46, 46, 0));
+
+    & .nav-items {
+        display: flex;
+        margin-inline: 2rem;
+        flex-direction: row;
+        font-size: larger;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            font-weight: bold;
+            font-size: xx-large;
+            transition: .25s ease-in;
+        }
+
+        .title:hover {
+            transform: scale(1.05);
+        }
+
+        .title > span {
+            font-weight: normal;
+        }
+
+        .links {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+            transition: .25s ease-in;
+        }
+
+        .links > li:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    hr {
+        margin-inline: 3em;
+        opacity: .6;
+    }
+}
+
+main {
+    margin-top: 80px;
+}
+
+.container {
+    width: 100vw;
+    margin: 2em;
+    
+    .hero-image {
+        max-width: 100%;
+        z-index: -999;
+    }
+
+    .interest-callout {
+        background: -webkit-linear-gradient(left, #a574dd, #028a0f);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+} */
