@@ -12,24 +12,100 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap"
       rel="stylesheet" />
 
+    <script src="./index.js"></script>
+
     <title>louison.dev</title>
   </head>
   <body>
     <nav class="px-8 pt-8">
-      <div class="flex flex-col sm:flex-row align-middle justify-between">
-		<a href="./index.html">
-			<span
-			class="text-2xl font-bold transition hover:text-purple-600 hover:scale-105"
-			>Todd <span class="font-thin hover:text-purple-400">Louison</span>
-			</span>
-		</a>
-        <div class="flex gap-8 font-light">
-			<a class="hover:scale-105 hover:text-purple-400 transition" href="./about.html">About</a>
-            <a class="hover:scale-105 hover:text-purple-400 transition" href="./projects.html">Projects</a>
-            <a class="hover:scale-105 hover:text-purple-400 transition" href="./experience.html">Experience</a>
-            <a class="scale-105 text-purple-400 transition">Contact</a>
-            <a class="grayscale">🌒</a>
-          </li>
+      <div class="flex flex-row align-middle justify-between">
+        <a href="./index.html">
+          <span
+            class="text-2xl font-bold transition hover:text-purple-600 hover:scale-105"
+            >Todd <span class="font-thin hover:text-purple-400">Louison</span>
+          </span>
+        </a>
+        <div class="hidden md:flex gap-8 font-light">
+          <a
+            class="hover:scale-105 hover:text-purple-400 transition"
+            href="./about.html"
+            >About</a
+          >
+          <a class="scale-105 text-purple-400 transition" href="./projects.html"
+            >Projects</a
+          >
+          <a
+            class="hover:scale-105 hover:text-purple-400 transition"
+            href="./experience.html"
+            >Experience</a
+          >
+          <a class="scale-105 text-purple-400 transition">Contact</a>
+          <a class="grayscale">🌒</a>
+        </div>
+
+        <div class="md:hidden pb-2">
+          <div class="relative inline-block text-left">
+            <button
+              type="button"
+              class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true">
+              Menu
+              <svg
+                class="-mr-1 h-5 w-5 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div
+              class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              role="menu"
+              id="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1">
+              <div class="py-1" role="none">
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <a
+                  href="./about.html"
+                  class="menu-item text-gray-700 block mx-2 py-2 px-2 rounded-lg text-sm hover:bg-purple-200 transition"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-0"
+                  >About</a
+                >
+                <a
+                  href="./projects.html"
+                  class="menu-item text-gray-700 block mx-2 py-2 px-2 rounded-lg text-sm hover:bg-purple-200 transition"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                  >Projects</a
+                >
+                <a
+                  href="./experience.html"
+                  class="menu-item text-gray-700 block mx-2 py-2 px-2 rounded-lg text-sm hover:bg-purple-200 transition"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-2"
+                  >Experience</a
+                >
+                <a
+                  class="menu-item text-gray-700 block mx-2 py-2 px-2 rounded-lg text-sm bg-purple-100 hover:bg-purple-200 transition"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-2"
+                  >Contact</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <hr class="p-4" />
@@ -37,7 +113,7 @@
     <main class="px-8">
       <div class="container">
         <h1 class="text-4xl">Contact me!</h1>
-        </div>
+      </div>
     </main>
   </body>
 </html>
