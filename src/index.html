@@ -17,11 +17,11 @@
     <title>louison.dev</title>
   </head>
   <body>
-    <nav class="px-8 pt-8">
+    <nav class="px-8 pt-8" id="navigation-bar">
       <div class="flex flex-row align-middle justify-between">
-        <a>
+        <a class="hover:scale-110 transition origin-bottom-left duration-200">
           <span
-            class="text-2xl font-bold transition hover:text-purple-600 hover:scale-105"
+            class="text-2xl font-bold transition hover:text-purple-600"
             >Todd <span class="font-thin hover:text-purple-400">Louison</span>
           </span>
         </a>
@@ -119,7 +119,7 @@
       </div>
       <hr class="p-4" />
     </nav>
-    <main class="containermd:mx-auto">
+    <main class="container relative md:mx-auto">
       <div class="flex flex-col md:flex-row px-4 items-center justify-center">
         <div
           class="shadow-lg rounded-[320px] ml-0 mx-8 min-w-80 w-80 h-80 aspect-square overflow-hidden hover:rounded-3xl hover:scale-110 transition-all duration-500 ease">
@@ -141,8 +141,14 @@
             </h2>
           </div>
           <div class="mt-8">
-            <h2 class="text-3xl font-semibold">Currently</h2>
-            <h2 class="text-xl">
+            <div class="flex flex-row items-center gap-2">
+              <h2 class="text-2xl font-semibold">Currently</h2>
+              <svg height="16" width="16" class="fill-green-500 animate-pulse">
+                <circle cx="8" cy="8" r="8"></circle>
+              </svg>
+            </div>
+            <h2
+              class="text-xl bg-slate-100 rounded-xl p-4 mt-2 ring ring-blue-100">
               Working as a <b>Software Engineer</b> at
               <b class="text-blue-400">DrChrono</b>, part of
               <b class="text-green-400">EverCommerce</b>.
@@ -151,30 +157,139 @@
           <div class="flex mt-4 gap-2">
             <a href="https://github.com/TLouison" target="_blank">
               <button
-                class="bg-slate-600 p-2 rounded-lg hover:scale-105 transition shadow-lg">
+                class="bg-slate-600 p-2 rounded-lg hover:scale-105 transition shadow">
                 <img class="h-8" src="./static/img/GitHub_Logo_White.png" />
               </button>
             </a>
             <a href="https://www.linkedin.com/in/todd-louison/" target="_blank">
               <button
-                class="bg-slate-200 p-2 rounded-lg hover:scale-105 transition shadow-lg">
+                class="bg-slate-200 p-2 rounded-lg hover:scale-105 transition shadow">
                 <img class="h-8" src="./static/img/LinkedIn_Logo.svg" />
               </button>
             </a>
           </div>
         </div>
       </div>
-      <div class="w-full h-96 p-4 bg-blue-200" id="about">
+      <div
+        class="w-full h-96 p-4 bg-slate-100 rounded-2xl shadow ring ring-blue-100"
+        id="about">
         <h1 class="text-4xl font-light">Learn a little more about me!</h1>
       </div>
       <div class="w-full h-96 p-4" id="projects">
-        <h1 class="text-4xl font-light text-right">Learn about my projects!</h1>
+        <h1 class="text-4xl font-light text-right rounded-2xl">
+          Learn about my projects!
+        </h1>
+        <div class="flex md:flex-row w-full">
+          <p></p>
+          <div></div>
+        </div>
       </div>
-      <div class="w-full h-96 p-4 bg-blue-200" id="experience">
-        <h1 class="text-4xl font-light">Learn a little my experience!</h1>
+      <div
+        class="w-full px-4 py-8 md:p-8 bg-slate-100 rounded-2xl shadow ring ring-blue-100"
+        id="experience">
+        <h1 class="text-4xl font-light">Experience Timeline  📆</h1>
+        <div class="flex flex-col md:flex-row mt-4 md:ml-4">
+          <div
+            class="flex flex-col justify-center gap-4 border-l-2 border-slate-500"
+            id="experience-timeline">
+            <div
+              class="ml-2 bg-slate-200 rounded-lg p-2 transition shadow"
+              id="experience-0"
+              onclick="setExperienceFocus(0)">
+              <h3 class="flex flex-row items-center font-light italic">April 2023<span class="rounded-full text-sm bg-green-200 px-2 ml-2 not-italic animate-pulse">Current</span></h3>
+              <div class="pl-2">
+                <h4 class="font-semibold">DrChrono</h4>
+                <h5>Software&nbsp;Engineer</h5>
+              </div>
+            </div>
+            <div
+              class="ml-2 rounded-lg p-2 transition"
+              id="experience-1"
+              onclick="setExperienceFocus(1)">
+              <h3 class="font-light italic">January 2022</h3>
+              <div class="pl-2">
+                <h4 class="font-semibold">EnergySage, Inc.</h4>
+                <h5>Software&nbsp;Engineer&nbsp;II</h5>
+              </div>
+            </div>
+            <div
+              class="ml-2 rounded-lg p-2 transition"
+              id="experience-2"
+              onclick="setExperienceFocus(2)">
+              <h3 class="font-light italic">June 2020</h3>
+              <div class="pl-2">
+                <h4 class="font-semibold">EnergySage, Inc.</h4>
+                <h5>Software&nbsp;Engineer&nbsp;I</h5>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-200 mt-4 md:mt-0 md:ml-8 rounded-lg p-4 w-full shadow">
+            <div id="experience-0-description" class="transition-opacity">
+              <h3 class="font-semibold text-2xl">DrChrono, Payments Team</h3>
+              <h4 class="italic font-light text-xl">Software Engineer</h4>
+                As part of DrChrono, I have gotten the chance to learn about how
+                to work with legacy code, and implement modern best practices
+                while keeping the historical functionality.
+				<h5 class="font-semibold mt-2 text-xl">Key Learnings</h5>
+				<h5 class="font-semibold mt-2">Payment Processing</h5>
+                In my work, I've become very familiar with
+                <a
+                  href="https://stripe.com/docs"
+                  target="_blank"
+                  class="text-blue-800">
+                  Stripe's Payments API</a
+                >
+                and
+                <a
+                  href="https://stripe.com/docs/js"
+                  target="_blank"
+                  class="text-blue-800"
+                  >Stripe.js</a
+                >, as well as moderately familiar with Square and PaySimple as
+                payment processors.
+              </h5>
+			  <h5 class="font-semibold mt-2">Working With Legacy Code</h5>
+                DrChrono has been around for over a decade, which means there is a lot of code that was written before many of today's best practices were defined. I've learned ways to encapsulate new functionality to reduce the changes required to old code, slowly improving the codebase over time. 
+              </h5>
+            </div>
+            <div
+              id="experience-1-description"
+              class="hidden transition-opacity">
+              <h3 class="font-semibold text-2xl">EnergySage, Community Solar Pod (CSM)</h3>
+              <h4 class="italic font-light text-xl">Software Engineer II</h4>
+                As part of EnergySage, I had the chance to work in a startup environment with experienced engineers who helped accelerate my development and understanding of writing production software that scales to the needs of the business.
+				<h5 class="font-semibold mt-2 text-xl">Key Learnings</h5>
+				<h5 class="font-semibold mt-2">Tackling Large Features End-to-End</h5>
+                Having gathered more experience both in my career and on the community solar team, I began getting trusted with (and successfully delivering) larger and larger projects, at one point being the primary backend developer for the pod.
+              </h5>
+			  <h5 class="font-semibold mt-2">Collaborating Across Teams</h5>
+				I was able to take on multiple projects that had company-wide implications, which required constant cross-team communication to ensure all requirements were being upheld by all parties. Notably, I collaborated across teams to devise and implement a new user authentication flow for CSM that leveraged AWS Cognito to enable SSO across the EnergySage portfolio of sites.
+              </h5>
+            </div>
+            <div
+              id="experience-2-description"
+              class="hidden transition-opacity">
+              <h3 class="font-semibold text-2xl">EnergySage, Provider and Community Solar Pod (CSM)</h3>
+              <h4 class="italic font-light text-xl">Software Engineer I</h4>
+                Starting my career at EnergySage, I had the chance to immediately work on impactful projects that directly affected the solar installers on the platform. Starting in 2021, I joined the CSM team's greenfield project shortly after it began, with modern tooling that allowed me to continue learning practical software development without as many concerns of working around legacy code.
+				<h5 class="font-semibold mt-2 text-xl">Key Learnings</h5>
+				<h5 class="font-semibold mt-2">Developing Production-Ready Code</h5>
+                This was my first role as an individual contributor to a codebase, and I learned an incredible amount about working with my tools, understanding requirements from product stakeholders, and leveraging the knowledge of my more experienced coworkers to reach solutions.
+              </h5>
+			  <h5 class="font-semibold mt-2">Learning How To Learn</h5>
+				Developing software in a company environment is far different from academic programming, so identifying the blindspots from schooling (i.e, working with experienced programmers, tradeoffs between time and effort, getting stakeholder approval, and many more) was critical to teach me what I needed to learn. 
+              </h5>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="w-full h-96 p-4" id="contact">
-        <h1 class="text-4xl font-light text-right">Contact me!</h1>
+        <h1 class="text-4xl font-light text-right rounded-2xl">Contact me!</h1>
+      </div>
+      <div
+        class="fixed text-xl text-slate-600 bottom-8 right-8 px-4 py-2 bg-green-200 bg-opacity-80 rounded-full animate-pulse">
+        Back to Top
       </div>
       <!-- <div class="container mt-8 flex flex-col sm:flex-row justify-center text-center">
 			<div class="mt-8 px-4 md:grid md:grid-cols-2 md:grid-rows-2 bg-purple-100 border border-purple-400 rounded-lg">
