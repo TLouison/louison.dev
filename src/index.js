@@ -31,19 +31,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 var selectedExperience = 0;
 function setExperienceFocus(idx) {
     // Hide the previously shown experience
-    toggleExperienceClasses();
+    toggleExperienceClasses(false);
     
     selectedExperience = idx;
 
     // Show the new experience
-    toggleExperienceClasses();
+    toggleExperienceClasses(true);
 }
 
-function toggleExperienceClasses() {
+function toggleExperienceClasses(add) {
     document.getElementById(`experience-${selectedExperience}-description`).classList.toggle("hidden");
     experienceSelector = document.getElementById(`experience-${selectedExperience}`);
-    experienceSelector.classList.toggle("bg-slate-200");
-    experienceSelector.classList.toggle("shadow");
+
+    if (add) {
+        experienceSelector.classList.add("bg-slate-200");
+        experienceSelector.classList.add("dark:bg-slate-700");
+        experienceSelector.classList.add("shadow");
+    } else {
+        experienceSelector.classList.remove("bg-slate-200");
+        experienceSelector.classList.remove("dark:bg-slate-700");
+        experienceSelector.classList.remove("shadow");
+    }
 }
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
