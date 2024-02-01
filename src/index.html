@@ -12,17 +12,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap"
       rel="stylesheet" />
 
+	<script src="https://kit.fontawesome.com/b9e31a9f26.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 
     <title>louison.dev</title>
   </head>
-  <body>
+  <body class="dark:bg-slate-950 dark:text-slate-50">
     <nav class="px-8 pt-8" id="navigation-bar">
       <div class="flex flex-row align-middle justify-between">
         <a class="hover:scale-110 transition origin-bottom-left duration-200">
           <span
             class="text-2xl font-bold transition hover:text-purple-600"
-            >Todd <span class="font-thin hover:text-purple-400">Louison</span>
+            >Todd<span class="font-thin">Louison</span>
           </span>
         </a>
         <div class="hidden md:flex gap-8 font-light">
@@ -46,7 +47,7 @@
             href="#contact"
             >Contact</a
           >
-          <a class="grayscale">🌒</a>
+          <button class="grayscale w-8 h-8" onclick="toggleDarkMode()">🌒</button>
         </div>
 
         <div class="md:hidden pb-2">
@@ -112,27 +113,30 @@
                   id="menu-item-2"
                   >Contact</a
                 >
+				<a class="menu-item block px-2 transition text-gray-700 text-sm">
+					<button class="w-full hover:bg-purple-200 p-2 rounded-lg border border-slate-200" onclick="toggleDarkMode()"><span class="grayscale ">🌒 Toggle Dark Mode</span></button>
+				</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <hr class="p-4" />
+      <hr class="p-4 border-purple-300 text-purple-300 dark:border-white dark:text-white" />
     </nav>
-    <main class="container relative md:mx-auto">
+    <main class="container relative px-4 mx-auto">
       <div class="flex flex-col md:flex-row px-4 items-center justify-center">
         <div
-          class="shadow-lg rounded-[320px] ml-0 mx-8 min-w-80 w-80 h-80 aspect-square overflow-hidden hover:rounded-3xl hover:scale-110 transition-all duration-500 ease">
+          class="shadow-lg rounded-[320px] ml-0 mx-8 min-w-48 max-w-80 aspect-square overflow-hidden hover:rounded-3xl hover:scale-110 transition-all duration-500 ease">
           <img src="./static/img/headshot.jpg" />
         </div>
         <div class="my-8 md:py-8 md:p-0">
           <div>
             <h1
-              class="text-6xl font-bold hover:scale-125 hover:drop-shadow-lg origin-bottom-left transition">
-              Todd Louison
+              class="text-6xl font-bold hover:scale-110 hover:drop-shadow-lg origin-bottom-left transition">
+              Todd&nbsp;Louison
             </h1>
-            <h1 class="text-4xl font-light">
-              🧑🏻‍💻 Full&nbsp;Stack Web Developer
+            <h1 class="text-4xl font-light flex flex-row gap-2">
+              <div>🧑🏻‍💻</div><div>Full&nbsp;Stack Web&nbsp;Developer</div>
             </h1>
             <h2 class="text-xl">
               Passionate about <span class="text-green-400">learning</span>,
@@ -148,44 +152,85 @@
               </svg>
             </div>
             <h2
-              class="text-xl bg-slate-100 rounded-xl p-4 mt-2 ring ring-blue-100">
-              Working as a <b>Software Engineer</b> at
-              <b class="text-blue-400">DrChrono</b>, part of
-              <b class="text-green-400">EverCommerce</b>.
+              class="text-xl bg-slate-100 dark:bg-slate-800 rounded-xl p-4 mt-2 ring ring-blue-100 dark:ring-blue-900 dark:ring-blue-900">
+              <b>Software Engineer</b> <a href="https://www.drchrono.com/" class="underline underline-offset-4 decoration-blue-300">@<b class="text-blue-400">DrChrono</b></a>, part of
+              <a href="https://www.evercommerce.com/" class="underline underline-offset-4 decoration-green-300"><b class="text-green-400">EverCommerce</b></a>.
             </h2>
           </div>
           <div class="flex mt-4 gap-2">
             <a href="https://github.com/TLouison" target="_blank">
               <button
-                class="bg-slate-600 p-2 rounded-lg hover:scale-105 transition shadow">
-                <img class="h-8" src="./static/img/GitHub_Logo_White.png" />
+                class="bg-slate-600 w-10 p-2 rounded-lg hover:scale-105 transition shadow">
+                <i class="fa-brands fa-github fa-lg text-white"></i>
               </button>
             </a>
             <a href="https://www.linkedin.com/in/todd-louison/" target="_blank">
               <button
-                class="bg-slate-200 p-2 rounded-lg hover:scale-105 transition shadow">
-                <img class="h-8" src="./static/img/LinkedIn_Logo.svg" />
+                class="bg-blue-400 p-2 w-10 rounded-lg hover:scale-105 transition shadow">
+                <i class="fa-brands fa-linkedin fa-lg text-white"></i>
               </button>
             </a>
           </div>
         </div>
       </div>
       <div
-        class="w-full h-96 p-4 bg-slate-100 rounded-2xl shadow ring ring-blue-100"
+        class="w-full p-4 bg-slate-100 dark:bg-slate-800 rounded-2xl shadow ring ring-blue-100 dark:ring-blue-900"
         id="about">
-        <h1 class="text-4xl font-light">Learn a little more about me!</h1>
+        <h1 class="text-4xl font-light">About Me 👋🏻</h1>
+		<p>Hi, I'm Todd! I'm a software engineer with 4 years of experience working on web applications built on Python/Django. I graduated from Rensselaer Polytechnic Institute in 2020 with a Bachelors Degree in Computer Science, with a concentraion in <i>Systems and Software</i>.</p>
+		<p class="mt-2">In my free time, I spend a decent amount of it coding side projects in frameworks or languages that I think sound fun, but I also have a lot of hobbies that I love pursuing including photography, 3D printing, cooking, and gaming.</p>
+		<div id="hobby-explainers" class="grid grid-cols-1 md:grid-cols-2 pt-4 gap-4">
+			<div id="hobby-photography" class="rounded-lg bg-slate-200 dark:bg-slate-700 p-4 shadow">
+				<h2 class="text-lg font-semibold">Photography</h2>
+				One of my more recent hobbies, I've fallen deeply into the rabbit hole of photography. I'm always walking around with a camera in my hand, and particularly enjoy portrait and pet photography with my friends and family.
+			</div>
+			<div id="hobby-3d-printing" class="rounded-lg bg-slate-200 dark:bg-slate-700 p-4 shadow">
+				<h2 class="text-lg font-semibold">3D Printing</h2>
+				3D printing became a hobby out of necessity: I love smart home automation, but I needed mounts for my sensors. I started prototyping and custom printing models to fit the needs of spot the sensors are in.
+			</div>
+			<div id="hobby-cooking" class="rounded-lg bg-slate-200 dark:bg-slate-700 p-4 shadow">
+				<h2 class="text-lg font-semibold">Cooking</h2>
+				I've always had a love of cooking that was nurtured by my dad, an awesome chef himself. I really care about the science of cooking, and love experimenting with different cooking methods and flavors.
+			</div>
+			<div id="hobby-gaming" class="rounded-lg bg-slate-200 dark:bg-slate-700 p-4 shadow">
+				<h2 class="text-lg font-semibold">Gaming</h2>
+				I've been gaming since my earliest memories, growing up a huge fan of Sonic. I play all types of genres: I've reached <i>Legendary Eagle</i> rank in <i>CS:GO</i>, I love story-driven single-player games, and I've played <i>World of Warcraft</i> since 2008.
+			</div>
+		</div>
       </div>
-      <div class="w-full h-96 p-4" id="projects">
-        <h1 class="text-4xl font-light text-right rounded-2xl">
-          Learn about my projects!
+      <div class="w-full p-4 my-4" id="projects">
+        <h1 class="text-4xl font-light text-center rounded-2xl">
+          My Projects 💻
         </h1>
+		<div class="grid sm:grid-cols-2 gap-4 mt-4">
+			<div class="p-4">
+				<h2 class="text-lg font-semibold">chess-rust</h2>
+				<p>I wanted to spend some time learning how to program in Rust, and I thought a chess engine would be a fun but fairly complex way to dive into a larger project.</p>
+				<a href="https://github.com/TLouison/chess-rust" class="text-blue-400 underline decoration-blue-400 mt-2">Check out chess-rust ></a>
+			</div>
+			<div class="p-4 ">
+				<h2 class="text-lg font-semibold">Location Aware Lighting</h2>
+				<p>A group project for an IoT class where we used three Raspberry Pi's to act as BlueTooth beacons. Their signal strength was read by a smartwatch and used to detect what room a person is in. I handled the network programming for the team.</p>
+				<a href="https://github.com/akhilcjacob/Location-Aware-Lighting" class="text-blue-400 underline decoration-blue-400 mt-2">Check out Location Aware Lighting ></a>
+			</div>
+			<div class="p-4">
+				<h2 class="text-lg font-semibold">louison.dev</h2>
+				<p>The source code for the website you're looking at right now! Built with Tailwind CSS and a hint of JavaScript.</p>
+				<a href="https://github.com/TLouison/louison.dev" class="text-blue-400 underline decoration-blue-400 mt-2">louison.dev</a>
+			</div>
+			<div class="p-4">
+				<h2 class="text-lg font-semibold">PackingHelperiOS</h2>
+				<p>A work in progress iOS app designed to help reduce pre-travel packing anxiety. Created both to solve an issue I really struggle with, as well as a great excuse to learn more about Swift, SwiftUI, and SwiftData.</p>
+				<a href="https://github.com/TLouison/PackingHelperiOS" class="text-blue-400 underline decoration-blue-400 mt-2">louison.dev</a>
+			</div>
+		</div>
         <div class="flex md:flex-row w-full">
           <p></p>
           <div></div>
         </div>
       </div>
       <div
-        class="w-full px-4 py-8 md:p-8 bg-slate-100 rounded-2xl shadow ring ring-blue-100"
+        class="w-full px-4 py-8 md:p-8 bg-slate-100 dark:bg-slate-800 rounded-2xl shadow ring ring-blue-100 dark:ring-blue-900"
         id="experience">
         <h1 class="text-4xl font-light">Experience Timeline  📆</h1>
         <div class="flex flex-col md:flex-row mt-4 md:ml-4">
@@ -193,10 +238,10 @@
             class="flex flex-col justify-center gap-4 border-l-2 border-slate-500"
             id="experience-timeline">
             <div
-              class="ml-2 bg-slate-200 rounded-lg p-2 transition shadow"
+              class="ml-2 bg-slate-200 dark:bg-slate-700 rounded-lg p-2 transition shadow"
               id="experience-0"
               onclick="setExperienceFocus(0)">
-              <h3 class="flex flex-row items-center font-light italic">April 2023<span class="rounded-full text-sm bg-green-200 px-2 ml-2 not-italic animate-pulse">Current</span></h3>
+              <h3 class="flex flex-row items-center font-light italic">April 2023<span class="rounded-full text-sm bg-green-200 dark:text-slate-950 px-2 ml-2 not-italic animate-pulse">Current</span></h3>
               <div class="pl-2">
                 <h4 class="font-semibold">DrChrono</h4>
                 <h5>Software&nbsp;Engineer</h5>
@@ -224,7 +269,7 @@
             </div>
           </div>
           <div
-            class="bg-slate-200 mt-4 md:mt-0 md:ml-8 rounded-lg p-4 w-full shadow">
+            class="bg-slate-200 dark:bg-slate-700 mt-4 md:mt-0 md:ml-8 rounded-lg p-4 w-full shadow">
             <div id="experience-0-description" class="transition-opacity">
               <h3 class="font-semibold text-2xl">DrChrono, Payments Team</h3>
               <h4 class="italic font-light text-xl">Software Engineer</h4>
@@ -237,17 +282,17 @@
                 <a
                   href="https://stripe.com/docs"
                   target="_blank"
-                  class="text-blue-800">
+                  class="text-blue-800 underline decoration-blue-800 dark:text-blue-200 dark:decoration-blue-200">
                   Stripe's Payments API</a
                 >
                 and
                 <a
                   href="https://stripe.com/docs/js"
                   target="_blank"
-                  class="text-blue-800"
+                  class="text-blue-800 underline decoration-blue-800 dark:text-blue-200 dark:decoration-blue-200"
                   >Stripe.js</a
                 >, as well as moderately familiar with Square and PaySimple as
-                payment processors.
+                payment processors. Through this I also understand PCI-Compliance at a practical level.
               </h5>
 			  <h5 class="font-semibold mt-2">Working With Legacy Code</h5>
                 DrChrono has been around for over a decade, which means there is a lot of code that was written before many of today's best practices were defined. I've learned ways to encapsulate new functionality to reduce the changes required to old code, slowly improving the codebase over time. 
@@ -284,7 +329,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-96 p-4" id="contact">
+      <div class="w-full p-4 my-4" id="contact">
         <h1 class="text-4xl font-light text-right rounded-2xl">Contact me!</h1>
       </div>
       <div
@@ -312,5 +357,8 @@
 			</div>
 	  </div> -->
     </main>
+	<footer class="w-screen text-center py-4">
+		©️ 2024 · Todd Louison
+	</footer>
   </body>
 </html>
