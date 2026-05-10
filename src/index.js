@@ -70,3 +70,16 @@ function toggleDarkMode() {
         document.documentElement.classList.remove('dark')
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-visible');
+                fadeObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+});

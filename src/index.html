@@ -16,6 +16,18 @@
 	<script src="https://kit.fontawesome.com/b9e31a9f26.js" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 
+    <style>
+      .fade-in {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      .fade-in-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+
     <title>louison.dev</title>
   </head>
   <body class="dark:bg-slate-950 dark:text-slate-50">
@@ -136,9 +148,9 @@
               class="text-6xl font-bold hover:scale-110 hover:drop-shadow-lg origin-bottom-left transition">
               Todd&nbsp;Louison
             </h1>
-            <h1 class="text-4xl font-light flex flex-row gap-2">
+            <h2 class="text-4xl font-light flex flex-row gap-2">
               <div>🧑🏻‍💻</div><div>Full&nbsp;Stack Web&nbsp;Developer</div>
-            </h1>
+            </h2>
             <h2 class="text-xl">
               Passionate about <span class="text-green-400">learning</span>,
               <span class="text-purple-400">tinkering</span>, and
@@ -147,16 +159,16 @@
           </div>
           <div class="mt-8">
             <div class="flex flex-row items-center gap-2">
-              <h2 class="text-2xl font-semibold">Currently</h2>
+              <h3 class="text-2xl font-semibold">Currently</h3>
               <svg height="16" width="16" class="fill-green-500 animate-pulse">
                 <circle cx="8" cy="8" r="8"></circle>
               </svg>
             </div>
-            <h2
+            <div
               class="text-xl bg-slate-100 dark:bg-slate-800 rounded-xl p-4 mt-2 ring ring-blue-100 dark:ring-blue-900 dark:ring-blue-900">
               <b>Software Engineer</b> <a href="https://www.drchrono.com/" class="underline underline-offset-4 decoration-blue-300">@<b class="text-blue-400">DrChrono</b></a>, part of
               <a href="https://www.evercommerce.com/" class="underline underline-offset-4 decoration-green-300"><b class="text-green-400">EverCommerce</b></a>.
-            </h2>
+            </div>
           </div>
           <div class="flex mt-4 gap-2">
             <a href="https://github.com/TLouison" target="_blank">
@@ -181,54 +193,58 @@
         </div>
       </div>
       <div
-        class="w-full p-4 bg-slate-100 dark:bg-slate-800 rounded-2xl shadow ring ring-blue-100 dark:ring-blue-900"
+        class="w-full p-4 bg-slate-100 dark:bg-slate-800 rounded-2xl shadow ring ring-blue-100 dark:ring-blue-900 fade-in"
         id="about">
-        <h1 class="text-4xl font-light">About Me 👋🏻</h1>
+        <h2 class="text-4xl font-light">About Me 👋🏻</h2>
 		<p>Hi, I'm Todd! I'm a software engineer with 6 years of experience working on web applications. I graduated from Rensselaer Polytechnic Institute with a Bachelor's Degree in Computer Science and with a concentration in <i>Systems and Software</i>.</p>
 		<p class="mt-2">In my free time, I spend a decent amount of it coding side projects in frameworks or languages that I think sound fun, but I also have a lot of hobbies that I love pursuing including photography, 3D printing, cooking, and gaming.</p>
 		<div id="hobby-explainers" class="grid grid-cols-1 md:grid-cols-2 pt-4 gap-4">
 			<div id="hobby-photography" class="rounded-lg bg-slate-200 dark:bg-slate-700 p-4 shadow">
-				<h2 class="text-lg font-semibold">Photography</h2>
+				<h3 class="text-lg font-semibold">Photography</h3>
 				One of my more recent hobbies, I've fallen deeply into the rabbit hole of photography. I'm always walking around with a camera in my hand, and particularly enjoy portrait and pet photography with my friends and family.
 			</div>
 			<div id="hobby-3d-printing" class="rounded-lg bg-slate-200 dark:bg-slate-700 p-4 shadow">
-				<h2 class="text-lg font-semibold">3D Printing</h2>
+				<h3 class="text-lg font-semibold">3D Printing</h3>
 				3D printing became a hobby out of necessity: I love smart home automation, but I needed mounts for my sensors. I started prototyping and custom printing models to fit the needs of the spots my sensors are in.
 			</div>
 			<div id="hobby-cooking" class="rounded-lg bg-slate-200 dark:bg-slate-700 p-4 shadow">
-				<h2 class="text-lg font-semibold">Cooking</h2>
+				<h3 class="text-lg font-semibold">Cooking</h3>
 				I've always had a love of cooking that was nurtured by my dad, an awesome chef himself. I really care about the science of cooking, and love experimenting with different cooking methods and flavors.
 			</div>
 			<div id="hobby-gaming" class="rounded-lg bg-slate-200 dark:bg-slate-700 p-4 shadow">
-				<h2 class="text-lg font-semibold">Gaming</h2>
+				<h3 class="text-lg font-semibold">Gaming</h3>
 				I've been gaming since my earliest memories, growing up a huge fan of Sonic. I play all types of genres: I've reached <i>Legendary Eagle</i> rank in <i>CS:GO</i>, I love story-driven single-player games, and I've played <i>World of Warcraft</i> since 2008.
 			</div>
 		</div>
       </div>
-      <div class="w-full p-4 my-4" id="projects">
-        <h1 class="text-4xl font-light text-center rounded-2xl">
+      <div class="w-full p-4 my-4 fade-in" id="projects">
+        <h2 class="text-4xl font-light text-center rounded-2xl">
           My Projects 💻
-        </h1>
+        </h2>
 		<div class="grid sm:grid-cols-2 gap-4 mt-4">
-			<div class="p-4">
-				<h2 class="text-lg font-semibold">chess-rust</h2>
+			<div class="p-4 fade-in">
+				<h3 class="text-lg font-semibold">chess-rust</h3>
 				<p>I wanted to spend some time learning how to program in Rust, and I thought a chess engine would be a fun but fairly complex way to dive into a larger project.</p>
-				<a href="https://github.com/TLouison/chess-rust" target="blank" class="text-blue-400 underline decoration-blue-400 mt-2">Check out chess-rust ></a>
+				<div class="flex flex-wrap gap-1 mt-2 mb-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">Rust</span></div>
+				<a href="https://github.com/TLouison/chess-rust" target="blank" class="text-blue-400 underline decoration-blue-400">Check out chess-rust ></a>
 			</div>
-			<div class="p-4 ">
-				<h2 class="text-lg font-semibold">Location Aware Lighting</h2>
+			<div class="p-4 fade-in">
+				<h3 class="text-lg font-semibold">Location Aware Lighting</h3>
 				<p>A group project for an IoT class where we used three Raspberry Pi's to act as Bluetooth beacons. Their signal strength was read by a smartwatch and used to detect what room a person is in to turn lights on and off. I handled the network programming for the team.</p>
-				<a href="https://github.com/akhilcjacob/Location-Aware-Lighting" target="blank" class="text-blue-400 underline decoration-blue-400 mt-2">Check out Location Aware Lighting ></a>
+				<div class="flex flex-wrap gap-1 mt-2 mb-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">Python</span><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">Raspberry Pi</span><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">Bluetooth</span><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">IoT</span></div>
+				<a href="https://github.com/akhilcjacob/Location-Aware-Lighting" target="blank" class="text-blue-400 underline decoration-blue-400">Check out Location Aware Lighting ></a>
 			</div>
-			<div class="p-4">
-				<h2 class="text-lg font-semibold">louison.dev</h2>
+			<div class="p-4 fade-in">
+				<h3 class="text-lg font-semibold">louison.dev</h3>
 				<p>The source code for the website you're looking at right now! Built with Tailwind CSS and a hint of JavaScript.</p>
-				<a href="https://github.com/TLouison/louison.dev" target="blank" class="text-blue-400 underline decoration-blue-400 mt-2">Check out louison.dev ></a>
+				<div class="flex flex-wrap gap-1 mt-2 mb-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">HTML</span><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">Tailwind CSS</span><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">JavaScript</span></div>
+				<a href="https://github.com/TLouison/louison.dev" target="blank" class="text-blue-400 underline decoration-blue-400">Check out louison.dev ></a>
 			</div>
-			<div class="p-4">
-				<h2 class="text-lg font-semibold">PackingHelperiOS</h2>
+			<div class="p-4 fade-in">
+				<h3 class="text-lg font-semibold">PackingHelperiOS</h3>
 				<p>A work-in-progress iOS app designed to help reduce pre-travel packing anxiety. Created both to solve an issue I really struggle with, as well as a great excuse to learn more about Swift, SwiftUI, and SwiftData.</p>
-				<a href="https://github.com/TLouison/PackingHelperiOS" target="blank" class="text-blue-400 underline decoration-blue-400 mt-2">Check out PackingHelperiOS ></a>
+				<div class="flex flex-wrap gap-1 mt-2 mb-2"><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">Swift</span><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">SwiftUI</span><span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 ring ring-slate-300 dark:ring-slate-600">SwiftData</span></div>
+				<a href="https://github.com/TLouison/PackingHelperiOS" target="blank" class="text-blue-400 underline decoration-blue-400">Check out PackingHelperiOS ></a>
 			</div>
 		</div>
         <div class="flex md:flex-row w-full">
@@ -237,9 +253,9 @@
         </div>
       </div>
       <div
-        class="w-full px-4 py-8 md:p-8 bg-slate-100 dark:bg-slate-800 rounded-2xl shadow ring ring-blue-100 dark:ring-blue-900"
+        class="w-full px-4 py-8 md:p-8 bg-slate-100 dark:bg-slate-800 rounded-2xl shadow ring ring-blue-100 dark:ring-blue-900 fade-in"
         id="experience">
-        <h1 class="text-4xl font-light">Experience Timeline  📆</h1>
+        <h2 class="text-4xl font-light">Experience Timeline 📆</h2>
         <div class="flex flex-col md:flex-row mt-4 md:ml-4">
           <div
             class="flex flex-col justify-center gap-4 border-l-2 border-slate-500"
@@ -333,9 +349,9 @@
           </div>
         </div>
       </div>
-      <div class="w-full p-4 mb-16 my-4 text-center" id="contact">
-        <h1 class="text-4xl font-light rounded-2xl mb-4">Contact Me</h1>
-		<h2 class="text-2xl mb-4">Want to get in touch?<br />You can reach me at any of the following places.</h2>
+      <div class="w-full p-4 mb-16 my-4 text-center fade-in" id="contact">
+        <h2 class="text-4xl font-light rounded-2xl mb-4">Contact Me</h2>
+		<p class="text-2xl mb-4">Want to get in touch?<br />You can reach me at any of the following places.</p>
 		<div class="flex gap-2 items-center justify-center">
 			<a href="https://github.com/TLouison" target="_blank">
 				<button
