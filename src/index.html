@@ -245,7 +245,7 @@
               <div className="grid reveal-up">
                 <div className="photo-frame">
                   <img src="./static/img/headshot.jpg" alt="Todd Louison" />
-                  <div className="photo-tag">Gainesville, FL · 2026</div>
+                  <div className="photo-tag">Taken in Gainesville, FL · 2026</div>
                 </div>
                 <div>
                   <div className="eyebrow">
@@ -519,30 +519,30 @@
 
       /* ---------- Experience ---------- */
       const EXPERIENCE = [
-        {
-          when: 'April 2023 — present',
-          co: 'DrChrono · part of EverCommerce',
-          role: 'Software Engineer III',
-          badge: 'Now',
-          title: 'DrChrono · Payments Team',
-          promotedFrom: 'Started as Software Engineer II · promoted to SE III',
-          summary:
-            "As part of DrChrono, I've worked with a legacy healthcare codebase, learning how to bring it up to modern standards while not sacrificing what already works.",
-          learnings: [
-            {
-              h: 'Payment processing',
-              p: "In my work I've become very familiar with Stripe's Payments API and Stripe.js, plus Square and PaySimple as payment processors. Through that I've also come to understand PCI compliance at a practical level.",
-            },
-            {
-              h: 'Working with legacy code',
-              p: "DrChrono has been around for over a decade, so a lot of code was written before today's best practices were defined. I've learned ways to encapsulate new functionality to reduce changes required to old code, slowly improving the codebase over time.",
-            },
-            {
-              h: 'EDI standard',
-              p: "I've become very familiar integrating with insurance clearinghouses using the EDI standard, particularly EDI 835 and 837. I've worked extensively with DrChrono's insurance integration code and built significant improvements into the workflow.",
-            },
-          ],
-        },
+		{
+		    when: 'April 2023 — present',
+    		co: 'DrChrono · part of EverCommerce',
+   		 	role: 'Software Engineer III',
+    		badge: 'Now',
+    		title: 'DrChrono · Payments Team',
+    		promotedFrom: 'Started as Software Engineer II · promoted to SE III',
+    		summary:
+      			"I build payments and insurance billing systems for a 10+ year-old healthcare platform that handles 25M+ patient payment transactions a year, modernizing the code as I go without breaking what already works.",
+    		learnings: [
+      			{
+        			h: 'Payment processing',
+        			p: "I built the patient portal's Square integration and the shared payment backend that Stripe and PaySimple also run on, and co-built Stripe S710 card reader payments in six weeks. I also built month-end transaction locking, now used by 7,500+ practices, so I know PCI compliance and payment reconciliation from hands-on work.",
+      			},
+      			{
+        			h: 'Working with legacy code',
+        			p: "I wrap new functionality in self-contained modules instead of patching old code. For example, I consolidated a patient statements system scattered across the codebase into one module, which made bugs much faster to isolate and laid the groundwork for future automation.",
+      			},
+      			{
+        			h: 'EDI standard',
+        			p: "I work with insurance clearinghouse integrations built on EDI 835 (remittances) and 837 (claims), and designed a distributed, ETL-style re-architecture of our 835 processing pipeline to remove its resource bottlenecks.",
+      			},
+    		],
+  		},
         {
           when: 'January 2022 — April 2023',
           co: 'EnergySage · Community Solar',

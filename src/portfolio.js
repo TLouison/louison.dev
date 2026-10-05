@@ -95,7 +95,7 @@ function Hero() {
         <div className="grid reveal-up">
           <div className="photo-frame">
             <img src="./static/img/headshot.jpg" alt="Todd Louison" />
-            <div className="photo-tag">Gainesville · 2024</div>
+            <div className="photo-tag">Taken in Gainesville · 2024</div>
           </div>
           <div>
             <div className="eyebrow"><span className="dot"></span>Full Stack Web Developer</div>
