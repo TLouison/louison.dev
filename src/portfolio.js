@@ -167,7 +167,7 @@ function About() {
           </div>
           <div className="fact">
             <div className="label">Based in</div>
-            <div className="val">Gainesville, FL</div>
+            <div className="val">Irvine, CA</div>
           </div>
           <div className="fact">
             <div className="label">Interested in</div>
@@ -436,7 +436,7 @@ function Foot() {
         <div className="foot">
           <div>©️ 2026 · Todd Louison</div>
           <div className="center"></div>
-          <div className="right">Gainesville, FL</div>
+          <div className="right">Irvine, CA</div>
         </div>
       </div>
     </footer>
